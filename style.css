@@ -1,195 +1,182 @@
-body {
-    background-color: #ca8a8b;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: "Quicksand", sans-serif;
-    text-align: center;
+body{
+  background-color: #ca8a8b;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  padding: 40px;
+  text-align: center;
+  margin: 10px;
+  text-shadow: 3px 5px 5px #7c5a50;
+}
+h2 {
+  font-size: 2em;
+}
+.smalldog-pics {
+  height: 10rem;
+  width: 50%;
+  margin: auto;
+}
+.smalldog {
+  display: flex;
+  padding: 25px;
+  margin: auto;
+  width: 65%;
+  justify-content: space-evenly;
+  background-color: #e2bcb7;
+  border-radius: 3em;
+}
+.bigdog {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  width: 65%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e2bcb7;
+  border-radius: 3em;
+
+}
+.card {
+  border: .4rem solid #b4846c;
+  padding: 0.7rem;
+  box-shadow: 10px 10px 10px #7c5a50;
+  border-radius: 0.5rem 4rem 0.5rem 0.5rem;
+  margin: 1.5rem;
+  transition-duration: 0.4s;
+  margin-bottom: 5rem;
+}
+
+.card:hover {
+  background-color: #5b6d5b;
+  transform: scale(1.1);
+}
+.card1{
+  transition-duration: 1sec;
+}
+.card1:hover{
+  background-color: #c2e0e7;
+  transition-property: all ;
+  transform: rotate(360deg)
+  
+}
+.card2{
+  transition-duration: 1sec;
+}
+.card2:hover{
+  background-color: #f5cedb;
+  transition-property: all;
+  transform: skew(8deg);
+  
+}
+.card3{
+  transition-duration: 1sec;
+}
+.card3:hover{
+  background-color: #f7eae6; 
+  box-shadow: 0 0 20px rgba(90, 0, 50, 1000);
+}
+.card4:hover{
+  background-color: #496a0f;
+   transform: scale(.9);
+    box-shadow: 0 0 30px rgba(100, 100, 30, 0);
+  
+}
+.card5:hover{
+  background-color: #b1b321;
+}
+
+.bigdog-pics {
+  width: 13rem;
+  height: 15rem;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bigdog-caption {
+  width: 85%;
+  background: #5b6d5b;
+  padding: 7.5%;
+  margin: 0;
+  border-radius: 0.5rem 4rem 0rem 0rem;
+  color: beige;
+}
+.bigdog-row {
+  display: flexbox;
+  justify-content: center;
+  width: 100%;
+}
+.animation{
+  height: 115%;
+  width: .5rem;  
+  background-color: transparent;
+  position: absolute;
+  animation-name: test;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  color: white;
+  transform: scale(.5);
+  animation-fill-mode: forwards;
+}
+
+@keyframes test {
+  0% {
+    left: 100%;
+    bottom: 10%;
+    
   }
-  h1 {
-    font-size: 3rem;
-    padding: 40px;
-    text-align: center;
-    margin: 10px;
-    text-shadow: 3px 5px 5px #7c5a50;
+ 
+  100% {
+    left: 82%;
+    bottom: 10%;
+    
   }
-  h2 {
-    font-size: 2em;
+}
+
+
+@media only screen and (max-width: 1210px) {
+  body {
+    background-color: aquamarine;
+    
   }
-  .smalldog-pics {
-    height: 10rem;
-    width: 50%;
-    margin: auto;
+  .smalldog{
+    flex-direction: column;
   }
-  .smalldog {
-    display: flex;
-    padding: 25px;
-    margin: auto;
-    width: 65%;
-    justify-content: space-evenly;
-    background-color: #e2bcb7;
-    border-radius: 3em;
+  .smalldog-pics{
+   width: 19rem;
+  }
+  .bigdog-caption {
+   font-size: 1rem;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: cadetblue;
+  }
+  h1{
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  .smalldog h2{
+    font-size: 1rem;
+  }
+  .smalldog-pics{
+    width: 80%;
+    height: 7rem;
   }
   .bigdog {
-    display: flex;
-    padding: 2rem;
-    margin: auto;
-    width: 65%;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #e2bcb7;
-    border-radius: 3em;
-  
+    flex-direction: column;
   }
-  .card {
-    border: .4rem solid #b4846c;
-    padding: 0.7rem;
-    box-shadow: 10px 10px 10px #7c5a50;
-    border-radius: 0.5rem 4rem 0.5rem 0.5rem;
-    margin: 1.5rem;
-    transition-duration: 0.4s;
-    margin-bottom: 5rem;
+  .smalldog {
+    flex-direction: column;
   }
-  
-  .card:hover {
-    background-color: #5b6d5b;
-    transform: scale(1.1);
+  .card{
+    margin: 10px 10px 45px;
   }
-  .card1{
-    transition-duration: 1sec;
-  }
-  .card1:hover{
-    background-color: #c2e0e7;
-    transition-property: all ;
-    transform: rotate(360deg)
-    
-  }
-  .card2{
-    transition-duration: 1sec;
-  }
-  .card2:hover{
-    background-color: #f5cedb;
-    transition-property: all;
-    transform: skew(8deg);
-    
-  }
-  .card3{
-    transition-duration: 1sec;
-  }
-  .card3:hover{
-    background-color: #f7eae6; 
-    box-shadow: 0 0 20px rgba(90, 0, 50, 1000);
-  }
-  .card4:hover{
-    background-color: #496a0f;
-     transform: scale(.9);
-      box-shadow: 0 0 30px rgba(100, 100, 30, 0);
-    
-  }
-  .card5:hover{
-    background-color: #b1b321;
-  }
-  
-  .bigdog-pics {
-    width: 13rem;
-    height: 15rem;
-    object-fit: cover;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .bigdog-caption {
-    width: 85%;
-    background: #5b6d5b;
-    padding: 7.5%;
-    margin: 0;
-    border-radius: 0.5rem 4rem 0rem 0rem;
-    color: beige;
-  }
-  .bigdog-row {
-    display: flexbox;
-    justify-content: center;
-    width: 100%;
-  }
-  .animation{
-    height: 2rem;
-    width: 3rem;  
-    background-color: transparent;
-    position: absolute;
-    animation-name: test;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    color: white;
-  }
-  
-  @keyframes test {
-    0% {
-      left: 50%;
-      bottom: 10%;
-      
-    }
-    25% {
-      left: 50%;
-      bottom: 20%;
-     
-    }
-    50% {
-      left: 55%;
-      bottom: 20%;
-     
-    }
-    75% {
-      left: 55%;
-      bottom: 10%;
-      
-    }
-    100% {
-      left: 50%;
-      bottom: 10%;
-      
-    }
-  }
-  
-  
-  @media only screen and (max-width: 1210px) {
-    body {
-      background-color: aquamarine;
-      
-    }
-    .smalldog{
-      flex-direction: column;
-    }
-    .smalldog-pics{
-     width: 19rem;
-    }
-    .bigdog-caption {
-     font-size: 1rem;
-  }
-  @media only screen and (max-width: 700px) {
-    body {
-      background-color: cadetblue;
-    }
-    h1{
-      font-size: 2.5rem;
-      padding: 20px;
-    }
-    .smalldog h2{
-      font-size: 1rem;
-    }
-    .smalldog-pics{
-      width: 80%;
-      height: 7rem;
-    }
-    .bigdog {
-      flex-direction: column;
-    }
-    .smalldog {
-      flex-direction: column;
-    }
-    .card{
-      margin: 10px 10px 45px;
-    }
-  }
-  
+}
