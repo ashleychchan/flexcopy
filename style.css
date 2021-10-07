@@ -110,7 +110,7 @@ h2 {
 }
 section{
   display: flex;
-width: 30%;
+width: 25%;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: flex-start;
@@ -175,12 +175,7 @@ margin: 50vw;
     width: 80%;
     height: 7rem;
   }
-  .bigdog {
-    flex-direction: column;
-  }
-  .smalldog {
-    flex-direction: column;
-  }
+ 
   .card{
     margin: 10px 10px 45px;
   }
